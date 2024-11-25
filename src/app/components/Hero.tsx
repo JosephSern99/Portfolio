@@ -13,7 +13,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Joseph Ch'ng Khoo Sern
+          Joseph Ch&apos;ng Khoo Sern
         </motion.h1>
         <motion.h2 
           className="text-2xl md:text-3xl mb-8 text-center"

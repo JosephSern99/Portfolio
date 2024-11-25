@@ -26,7 +26,7 @@ export default function Header() {
       transition={{ type: 'spring', stiffness: 300, damping: 30 }}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Joseph Ch'ng</h1>
+        <h1 className="text-2xl font-bold">Joseph Ch&apos;ng</h1>
         <nav className="flex items-center space-x-4">
           <Link href="#about" className="hover:text-blue-600 dark:hover:text-blue-400">About</Link>
           <Link href="#skills" className="hover:text-blue-600 dark:hover:text-blue-400">Skills</Link>
