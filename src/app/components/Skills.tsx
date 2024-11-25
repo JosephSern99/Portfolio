@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaPhp, FaPython, FaHtml5, FaJs, FaDatabase, FaCode, FaTasks, FaGitlab, FaBitbucket } from 'react-icons/fa'
+import { FaPython, FaHtml5, FaJs, FaDatabase, FaCode, FaTasks, FaGitlab, FaBitbucket } from 'react-icons/fa'
 import { SiLaravel, SiSymfony } from 'react-icons/si'
 
 export default function Skills() {
