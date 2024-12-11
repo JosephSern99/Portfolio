@@ -2,7 +2,13 @@ import { GitHubProject } from '../types/github';
 import ProjectCard from './Project-card';
 
 async function getGitHubProjects(): Promise<GitHubProject[]> {
-  const res = await fetch('http://localhost:3000/api/github-projects', { cache: 'no-store' });
+  // Use dynamic API URL based on environment
+  const apiUrl =
+    process.env.NODE_ENV === 'production'
+      ? process.env.NEXT_PUBLIC_API_URL
+      : 'http://localhost:3000';
+
+  const res = await fetch(`${apiUrl}/api/github-projects`, { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch projects');
   }
@@ -23,4 +29,3 @@ export default async function GitHubProjects() {
     </section>
   );
 }
-
