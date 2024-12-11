@@ -13,7 +13,7 @@ export default function About() {
     >
       <h2 className="text-2xl font-bold mb-4">About Me</h2>
       <p className="mb-4">
-        Dedicated software engineer with over 4 years of specialized experience with particular expertise in building scalable, and user-focused software solutions using modern technology tools to ensure seamless integration and high-performance applications across projects.
+        Dedicated software engineer of specialized experience with particular expertise in building scalable, and user-focused software solutions using modern technology tools to ensure seamless integration and high-performance applications across projects.
       </p>
       <div className="flex flex-col sm:flex-row justify-between">
         <p>📞 +60196333419</p>

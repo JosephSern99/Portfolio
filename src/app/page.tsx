@@ -6,6 +6,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Certificates from './components/Certificates'
 import Footer from './components/Footer'
+import GitHubProjects from './components/Github-Projects'
 
 
 export default function Home() {
@@ -18,9 +19,10 @@ export default function Home() {
       className="container     
       mx-auto px-4 py-8">
         <About />
-        <Skills />
-        <Experience />
         <Education />
+        <Skills />
+        <GitHubProjects />
+        <Experience />
         <Certificates />
       </div>
       <Footer />
