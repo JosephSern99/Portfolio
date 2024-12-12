@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { GitHubProject } from '@/app/types/github';
 
 export async function GET() {
-  const token = process.env.GITHUB_TOKEN;
+  const token = process.env.TOKEN;
   if (!token) {
     return NextResponse.json({ error: 'GitHub token is not set' }, { status: 500 });
   }
