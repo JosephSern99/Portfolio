@@ -1,8 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaPython, FaHtml5, FaJs, FaDatabase, FaCode, FaTasks, FaGitlab, FaBitbucket } from 'react-icons/fa'
-import { SiLaravel, SiSymfony } from 'react-icons/si'
+import { FaPython, FaHtml5, FaJs, FaDatabase, FaCode, FaTasks, FaGitlab, FaBitbucket, FaAngular, FaReact, FaDocker } from 'react-icons/fa'
+import { SiLaravel, SiSpringboot, SiSymfony } from 'react-icons/si'
 
 export default function Skills() {
   const skillCategories = [
@@ -11,6 +11,7 @@ export default function Skills() {
       skills: [
         { name: "Symfony", icon: <SiSymfony /> },
         { name: "Laravel PHP Framework", icon: <SiLaravel /> },
+        { name: "Spring Framework", icon: <SiSpringboot /> },
         { name: "Python", icon: <FaPython /> }
       ]
     },
@@ -21,7 +22,9 @@ export default function Skills() {
         { name: "JavaScript", icon: <FaJs /> },
         { name: "Classic ASP", icon: <FaCode /> },
         { name: "Twig Template", icon: <FaCode /> },
-        { name: "Blade Template", icon: <FaCode /> }
+        { name: "Blade Template", icon: <FaCode /> },
+        { name: "Angular", icon: <FaAngular /> },
+        { name: "React", icon: <FaReact /> }
       ]
     },
     {
@@ -50,7 +53,8 @@ export default function Skills() {
       title: "DevOps",
       skills: [
         { name: "GitLab", icon: <FaGitlab /> },
-        { name: "BitBucket", icon: <FaBitbucket /> }
+        { name: "BitBucket", icon: <FaBitbucket /> },
+        { name: "Docker", icon: <FaDocker /> }
       ]
     }
   ]
