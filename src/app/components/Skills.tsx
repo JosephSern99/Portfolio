@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { FaPython, FaHtml5, FaJs, FaDatabase, FaCode, FaTasks, FaGitlab, FaBitbucket, FaAngular, FaReact, FaDocker } from 'react-icons/fa'
-import { SiLaravel, SiSpringboot, SiSymfony } from 'react-icons/si'
+import { SiLaravel, SiQuarkus, SiSpringboot, SiSymfony } from 'react-icons/si'
 
 export default function Skills() {
   const skillCategories = [
@@ -12,6 +12,7 @@ export default function Skills() {
         { name: "Symfony", icon: <SiSymfony /> },
         { name: "Laravel PHP Framework", icon: <SiLaravel /> },
         { name: "Spring Framework", icon: <SiSpringboot /> },
+        { name: "Quarkus Framework", icon: <SiQuarkus /> },
         { name: "Python", icon: <FaPython /> }
       ]
     },
