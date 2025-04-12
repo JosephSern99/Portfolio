@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { FaPython, FaHtml5, FaJs, FaDatabase, FaCode, FaTasks, FaGitlab, FaBitbucket, FaAngular, FaReact, FaDocker } from 'react-icons/fa'
 import { SiLaravel, SiQuarkus, SiSpringboot, SiSymfony } from 'react-icons/si'
+import { FaMobileAlt } from 'react-icons/fa'
 
 export default function Skills() {
   const skillCategories = [
@@ -25,7 +26,8 @@ export default function Skills() {
         { name: "Twig Template", icon: <FaCode /> },
         { name: "Blade Template", icon: <FaCode /> },
         { name: "Angular", icon: <FaAngular /> },
-        { name: "React", icon: <FaReact /> }
+        { name: "React", icon: <FaReact /> },
+        { name: "React Native", icon: <FaMobileAlt /> },
       ]
     },
     {
@@ -61,7 +63,7 @@ export default function Skills() {
   ]
 
   return (
-    <motion.section 
+    <motion.section
       id="skills"
       className="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mb-8"
       initial={{ opacity: 0, y: 50 }}
@@ -71,8 +73,8 @@ export default function Skills() {
       <h2 className="text-2xl font-bold mb-4">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {skillCategories.map((category, index) => (
-          <motion.div 
-            key={index} 
+          <motion.div
+            key={index}
             className="mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
