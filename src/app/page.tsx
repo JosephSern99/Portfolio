@@ -7,17 +7,14 @@ import Education from './components/Education'
 import Certificates from './components/Certificates'
 import Footer from './components/Footer'
 import GitHubProjects from './components/Github-Projects'
-
+import BackToTop from './components/BackToTop'
 
 export default function Home() {
-
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <Header />
       <Hero />
-      <div 
-      className="container     
-      mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-12">
         <About />
         <Education />
         <Skills />
@@ -26,7 +23,7 @@ export default function Home() {
         <Certificates />
       </div>
       <Footer />
+      <BackToTop />
     </main>
   )
 }
-
