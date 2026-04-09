@@ -172,7 +172,7 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
             >
               Building scalable, user-focused software solutions with modern technologies.
-              4+ years of hands-on experience across full-stack, DevOps, and AI.
+              {new Date().getFullYear() - 2021}+ years of hands-on experience across full-stack, DevOps, and AI.
             </motion.p>
 
             {/* CTA buttons */}
