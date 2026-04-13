@@ -107,7 +107,7 @@ export default function Hero() {
               />
               <div className="absolute inset-1 rounded-full bg-slate-900" />
               <Image
-                src="/assets/profile/me.jpg"
+                src="/assets/profile/me.jpeg"
                 alt="Joseph Khoo"
                 fill
                 className="rounded-full object-cover p-1.5"
