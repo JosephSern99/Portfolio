@@ -196,8 +196,14 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => {
-                  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
-                  if (isMobile) {
+                  const ua = navigator.userAgent
+                  const isInAppBrowser = /Instagram|FBAN|FBAV|FB_IAB|Twitter|Line|WeChat|MicroMessenger/i.test(ua)
+                  const isMobile = /iPhone|iPad|iPod|Android/i.test(ua)
+                  if (isInAppBrowser) {
+                    // In-app browsers block custom schemes — just go straight to web
+                    e.preventDefault()
+                    window.location.href = 'https://www.linkedin.com/in/joseph-ch-ng-khoo/'
+                  } else if (isMobile) {
                     e.preventDefault()
                     const webUrl = 'https://www.linkedin.com/in/joseph-ch-ng-khoo/'
                     const appUrl = 'linkedin://in/joseph-ch-ng-khoo'
