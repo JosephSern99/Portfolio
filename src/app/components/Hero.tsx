@@ -195,6 +195,19 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/joseph-ch-ng-khoo/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+                  if (isMobile) {
+                    e.preventDefault()
+                    const webUrl = 'https://www.linkedin.com/in/joseph-ch-ng-khoo/'
+                    const appUrl = 'linkedin://in/joseph-ch-ng-khoo'
+                    const fallback = setTimeout(() => {
+                      window.location.href = webUrl
+                    }, 1500)
+                    window.addEventListener('blur', () => clearTimeout(fallback), { once: true })
+                    window.location.href = appUrl
+                  }
+                }}
                 className="flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 rounded-full
                   transition-all duration-200 hover:scale-105 text-sm font-medium"
               >
