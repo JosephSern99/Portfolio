@@ -1,9 +1,19 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaAws, FaGoogle, FaReact, FaShieldAlt, FaBrain, FaCloud } from 'react-icons/fa'
+import { FaAws, FaGoogle, FaReact, FaShieldAlt, FaBrain, FaCloud, FaExternalLinkAlt } from 'react-icons/fa'
 
 const certificates = [
+  {
+    name: 'AWS Cloud Quest: Cloud Practitioner',
+    short: 'AWS Cloud Quest',
+    icon: <FaCloud />,
+    color: 'from-amber-400 to-orange-500',
+    bg: 'bg-amber-50 dark:bg-amber-900/20',
+    border: 'border-amber-200 dark:border-amber-800/50',
+    iconBg: 'bg-amber-500',
+    link: 'https://www.credly.com/badges/2f3c52e3-8e93-4c1e-b195-26abd5c3c53c/linked_in_profile',
+  },
   {
     name: 'AWS Certified Solutions Architect Associate',
     short: 'SAA-C03',
@@ -12,6 +22,7 @@ const certificates = [
     bg: 'bg-orange-50 dark:bg-orange-900/20',
     border: 'border-orange-200 dark:border-orange-800/50',
     iconBg: 'bg-orange-500',
+    link: 'https://www.udemy.com/certificate/UC-dee8551e-75f9-49a0-9b7b-c9af6bb30ceb',
   },
   {
     name: 'Google Cloud Fundamentals: Core Infrastructure',
@@ -21,6 +32,7 @@ const certificates = [
     bg: 'bg-blue-50 dark:bg-blue-900/20',
     border: 'border-blue-200 dark:border-blue-800/50',
     iconBg: 'bg-blue-500',
+    link: 'https://www.coursera.org/account/accomplishments/certificate/CVKCNRC2MNMV',
   },
   {
     name: 'MDEC NxForce CyberSecurity Capacity Building',
@@ -30,15 +42,7 @@ const certificates = [
     bg: 'bg-red-50 dark:bg-red-900/20',
     border: 'border-red-200 dark:border-red-800/50',
     iconBg: 'bg-red-500',
-  },
-  {
-    name: 'Machine Learning Project with Alliance Bank',
-    short: 'ML / AI',
-    icon: <FaBrain />,
-    color: 'from-purple-400 to-violet-500',
-    bg: 'bg-purple-50 dark:bg-purple-900/20',
-    border: 'border-purple-200 dark:border-purple-800/50',
-    iconBg: 'bg-purple-500',
+    link: 'https://drive.google.com/file/d/1nGcAgLWS0kYg_K5Un0jFpBh7QQcLNfB6/view?usp=drive_link',
   },
   {
     name: 'StudySection React.js Certified Developer',
@@ -48,15 +52,17 @@ const certificates = [
     bg: 'bg-cyan-50 dark:bg-cyan-900/20',
     border: 'border-cyan-200 dark:border-cyan-800/50',
     iconBg: 'bg-cyan-500',
+    link: 'https://drive.google.com/file/d/1ecsATFXl_koe_N61vlUm7iQedfHp2xac/view?usp=sharing',
   },
   {
-    name: 'AWS Cloud Quest: Cloud Practitioner',
-    short: 'AWS Cloud Quest',
-    icon: <FaCloud />,
-    color: 'from-amber-400 to-orange-500',
-    bg: 'bg-amber-50 dark:bg-amber-900/20',
-    border: 'border-amber-200 dark:border-amber-800/50',
-    iconBg: 'bg-amber-500',
+    name: 'Machine Learning Project with Alliance Bank',
+    short: 'ML / AI',
+    icon: <FaBrain />,
+    color: 'from-purple-400 to-violet-500',
+    bg: 'bg-purple-50 dark:bg-purple-900/20',
+    border: 'border-purple-200 dark:border-purple-800/50',
+    iconBg: 'bg-purple-500',
+    link: 'https://drive.google.com/file/d/1_hKiMEteknDIa4VRKs0Sdkj0ki0U7a_1/view?usp=sharing',
   },
 ]
 
@@ -75,9 +81,12 @@ export default function Certificates() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {certificates.map((cert, index) => (
-          <motion.div
+          <motion.a
             key={index}
-            className={`relative rounded-2xl p-5 border ${cert.bg} ${cert.border} overflow-hidden group cursor-default`}
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`relative rounded-2xl p-5 border ${cert.bg} ${cert.border} overflow-hidden group cursor-pointer`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -102,8 +111,11 @@ export default function Certificates() {
                   {cert.name}
                 </p>
               </div>
+
+              {/* External link icon */}
+              <FaExternalLinkAlt className="flex-shrink-0 text-gray-300 dark:text-gray-600 group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors text-xs mt-0.5" />
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </motion.section>

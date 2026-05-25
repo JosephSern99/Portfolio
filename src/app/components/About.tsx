@@ -31,10 +31,12 @@ export default function About() {
           <div className="flex-1">
             <div className="text-4xl text-blue-300 dark:text-blue-700 font-serif mb-2 leading-none">&ldquo;</div>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
-              Dedicated software engineer with{' '}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">{new Date().getFullYear() - 2021}+ years</span> of specialized experience,
-              building scalable and user-focused software solutions using modern technology tools
-              to ensure seamless integration and high-performance applications across projects.
+              Fullstack Software Engineer with{' '}
+              <span className="font-semibold text-blue-600 dark:text-blue-400">{new Date().getFullYear() - 2021}+ years</span> of experience
+              building scalable enterprise and fintech solutions across Java, .NET, React, and React Native.
+              Proven at leading end-to-end delivery, modernizing legacy systems, integrating payment gateways,
+              and deploying production workloads on AWS — working across fast-paced, cross-functional teams to
+              align business needs with maintainable technical solutions.
             </p>
           </div>
 
