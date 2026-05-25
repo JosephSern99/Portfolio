@@ -15,7 +15,7 @@ const experiences = [
       'Leading end-to-end delivery of enterprise and fintech products. Rapidly self-onboarded onto .NET and delivered production-ready features across mobile, web, and internal platforms while coordinating with external stakeholders and managing AWS deployments.',
     projects: [
       {
-        name: 'Cashku – Fintech Unit Trust Mobile App',
+        name: 'Fintech Unit Trust Mobile App',
         details: [
           'Co-led end-to-end revamp delivering a React Native + .NET solution under aggressive timelines',
           'Integrated Paynet payment gateway, enabling secure financial transactions and unblocking a critical revenue path',
@@ -23,7 +23,7 @@ const experiences = [
         ],
       },
       {
-        name: 'Trackr – Internal Operations Platform',
+        name: 'Internal Operations Platform',
         details: [
           'Modernized codebase from Java 11 to Java 24, improving maintainability and unlocking newer language features',
           'Built and deployed real-time chat, attendance tracking, leave & claims, and admin dashboards used company-wide',
@@ -31,7 +31,7 @@ const experiences = [
         ],
       },
       {
-        name: 'Procurehere V8 – Proof of Concept',
+        name: 'Tendering SystemProof of Concept',
         details: [
           'Delivered frontend and backend features on a compressed 1–2 week timeline to support a client demo',
           'Resolved blocking bugs under tight deadlines, contributing to a successful client presentation',
