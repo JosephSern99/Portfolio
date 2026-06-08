@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaAws, FaGoogle, FaReact, FaShieldAlt, FaBrain, FaCloud, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaAws, FaGoogle, FaReact, FaShieldAlt, FaBrain, FaCloud, FaExternalLinkAlt, FaTrophy } from 'react-icons/fa'
 
 const certificates = [
   {
@@ -63,6 +63,16 @@ const certificates = [
     border: 'border-purple-200 dark:border-purple-800/50',
     iconBg: 'bg-purple-500',
     link: 'https://drive.google.com/file/d/1_hKiMEteknDIa4VRKs0Sdkj0ki0U7a_1/view?usp=sharing',
+  },
+  {
+    name: 'TNG Hackathon Participation - Joseph Khoo',
+    short: 'TNG Hackathon',
+    icon: <FaTrophy />,
+    color: 'from-yellow-400 to-amber-500',
+    bg: 'bg-yellow-50 dark:bg-yellow-900/20',
+    border: 'border-yellow-200 dark:border-yellow-800/50',
+    iconBg: 'bg-yellow-500',
+    link: 'https://drive.google.com/file/d/1-PXnjblyANQZ1NiRqxb2kZBcZNSI6TvZ/view?usp=drive_link',
   },
 ]
 
